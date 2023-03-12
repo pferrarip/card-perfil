@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+.main{   
+    width: 100%;
+    height: 100vh;
+    background-color: #CBE4DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 30%;
+    height: 55%;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 30px;
+}
+.up{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    background-color:#2C3333;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius:30px 30px 0px 0px;
+    text-align: center;
+    color: white;
+
+}
+.frame{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100px;
+    background-color: #536163;
+    background-image: url(juju.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+svg{
+    width: 20px;
+}
+.botoes{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 15%;
+    border-radius: 0px 0px 30px 30px;
+
+  
+}
+.esquerda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+.direita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms ease-in-out;
+    
+}
+.direita>a{
+    width: 50%;
+    gap: 0.5rem;
+    height:30px ;
+    border-radius:60px;
+    background-color:#39A2A8;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+.esquerda>a{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    outline: 1px solid rgb(169, 169, 169);
+
+}
+a:hover{
+    transform: scale(1.2);
+}
+.esquerda>a:hover{
+outline:1px solid black;
+}
+@media(max-width:1000px){
+    .card{
+        width:50%;
+        
+    }
+
+}
+@media (max-width:500px) {
+    .card{
+        width:80%;
+        
+    }
+    .direita>a{
+        width: 75%;
+    }
+    .botoes{
+        justify-content: space-around;
+    }
+}
+
